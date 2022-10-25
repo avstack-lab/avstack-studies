@@ -1,0 +1,9 @@
+[submodule "submodules/lib-avstack"]
+	path = submodules/lib-avstack
+	url = git@gitlab.oit.duke.edu:Autonomy/lib-avstack
+[submodule "submodules/lib-avstack-api"]
+	path = submodules/lib-avstack-api
+	url = git@gitlab.oit.duke.edu:Autonomy/lib-avstack-api
+[submodule "submodules/carla-sandbox"]
+	path = submodules/carla-sandbox
+	url = git@gitlab.oit.duke.edu:Autonomy/Simulators/CARLA/carla-sandbox.git
