@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "avstack-studies"
+version = "0.1.0-alpha.1"
+description = "Repeatability package for AVstack submission"
+authors = ["Spencer Hallyburton <spencer.hallyburton@duke.edu>"]
+readme = "README.md"
+license = "Apache-2.0"
+homepage = "https://avstack.org"
+repository = "https://github.com/avstack-lab/avstack-studies"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+]
+keywords = ["autonomy", "autonomous vehicles"]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+lib-avstack-api = { path = "submodules/lib-avstack-api", develop = true }
+lib-avstack-core = { path = "submodules/lib-avstack-core", develop = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
