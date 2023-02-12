@@ -20,7 +20,7 @@ Running `full_install.sh` has worked on multiple machines. This *should* be the 
 
 The `full_install.sh` will start a docker container which will automatically trigger the running of a jupyter notebook. The data and model folders will automatically bind-mount into the docker container, and paths inside the docker container should be managed automatically without issue. **IMPORTANT:** The docker container maps port 8888 in the docker container (jupyter default) to an exposed port 8888 on the host machine. If this port is for some reason already occupied on your host machine, you must change the mapping inside `run_docker.sh` (NOTE: `full_install.sh` calls `run_docker.sh` at the end).
 
-Once the docker container is running, it will tell you of a URL to visit (basically: `localhost:port:token`). Copy and paste this into your browser. You may need this token to start the notebook because jupyter will not recognize the docker container as a trusted agent or something of that nature.
+If the docker container is successfully started, you will see a jupyter-notebook-type output in the console. You can verify in the `run_docker.sh` script that, upon starting the container, we immediately start a jupyter notebook. The console text will tell you of a URL to visit where the notebook is running (basically: `localhost:port:token`). It will also have token text appended to the URL. Copy and paste all of this into your browser. You may need this token to start the notebook because jupyter will not recognize the docker container as a trusted agent or something of that nature.
 
 ### Running Computations
 
