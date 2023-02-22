@@ -20,6 +20,11 @@ To use the provided docker container, you must have the [NVIDIA Container Toolki
 
 ## Summary of Instructions
 
+NOTE: you do not need the full repository if using the docker image, however, it can be useful to clone the repository if you want to use the data download and install utilities. If cloning the repository and you want access to the submodules, ensure that you recurse the submodules when cloning with:
+
+```
+git clone --recurse-submodules https://github.com/avstack-lab/avstack-studies.git
+```
 
 ### Installation
 

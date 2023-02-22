@@ -41,7 +41,7 @@ start_docker () {
       --mount type=bind,src="$DATAFOLDER",target=/data \
       --mount type=bind,src="$MODELFOLDER",target=/models \
       -p 8888:8888 \
-      avstack/avstack-studies \
+      roshambo919/avstack:avstack-studies \
        /bin/bash -c "bash run_setup.sh /data /models && poetry run jupyter notebook --ip 0.0.0.0 --no-browser --allow-root"
 }
 

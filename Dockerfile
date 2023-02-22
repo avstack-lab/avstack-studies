@@ -20,7 +20,7 @@ RUN set -xe \
     && apt-get update \
     && apt-get -y install python3-pip \
     && apt-get -y install python3.8-venv \
-    && apt-get install ffmpeg libsm6 libxext6  -y
+    && apt-get install ffmpeg libsm6 libxext6 wget  -y
 
 # Install poetry separated from system interpreter
 RUN python3 -m venv $POETRY_VENV \
